@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2> Celebrities</h2>
+
+    <ul>
+        <% celebrities.forEach((celeb) => { %>
+
+          <li>
+            name: <%=celeb.name%>
+            <a href="/celeb/<%= celebrities._id %>"> View details</a>
+            <a href="/celeb/<%= celebrities._id %>/delete"> Delete</a>
+          </li>
+
+          <%  }) %>
+      </ul>
+
+  </body>
+</html>
